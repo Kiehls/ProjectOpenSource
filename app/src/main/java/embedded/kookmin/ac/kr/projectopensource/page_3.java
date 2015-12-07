@@ -66,7 +66,7 @@ public class page_3 extends android.support.v4.app.Fragment { //슬라이드 3�
         });
 
         ImageButton imageButton = (ImageButton) linearLayout.findViewById(R.id.bt_contest);
-        imageButton.setImageResource(R.drawable.seoulapp); //ImageButton의 이미지 설정
+        imageButton.setImageResource(R.drawable.kangwonapp); //ImageButton의 이미지 설정
         imageButton.setScaleType(ImageButton.ScaleType.CENTER_CROP);//ImageButton의 이미지 크기 설정
         imageButton.setBackgroundColor(0x00000000);//ImageButton의 뒷배경 설정
         imageButton.setOnClickListener(new View.OnClickListener() {

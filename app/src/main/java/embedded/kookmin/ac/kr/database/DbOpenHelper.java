@@ -56,20 +56,6 @@ public class DbOpenHelper extends SQLiteOpenHelper{
     public void subOnCreate(SQLiteDatabase db, String tableName) {
         //db.execSQL("DROP TABLE IF EXISTS " + tableName);
         db.execSQL("CREATE TABLE IF NOT EXISTS " + tableName + " ( ID INTEGER PRIMARY KEY AUTOINCREMENT, needPerson text, numPerson text, comments text)");
-
-//        final Cursor cursor = db.rawQuery("select * from " + tableName, null);
-//        int sum = 0;
-//        if (cursor != null) {
-//            try {
-//                if (cursor.moveToFirst()) {
-//                    int content_count = cursor.getCount();
-//                    for (int i = 0; i< content_count; i++)
-//                        System.out.print(cursor.getString(i));
-//                }
-//            } finally {
-//                cursor.close();
-//            }
-//        }
     }
 }
 
