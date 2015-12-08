@@ -112,7 +112,7 @@
             android:id="@+id/editText_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="text내용 (50자 이내)"
+            android:hint="간략한 설명 및 등록자 번호 입력"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_below="@+id/linearLayout3"
