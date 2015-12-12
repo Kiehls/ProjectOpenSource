@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NumOfList"
-        android:id="@+id/numList"
+        android:id="@+id/bt_numList"
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -28,9 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
         android:id="@+id/textView"
-        android:layout_above="@+id/numList"
+        android:layout_above="@+id/bt_numList"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="90dp" />
 </RelativeLayout>

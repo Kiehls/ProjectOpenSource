@@ -20,15 +20,15 @@
             android:layout_marginBottom="20dp"
             android:background="#98FB98"
             android:gravity="center"
-            android:text="필요한사람" />
+            android:text="Title" />
 
 
         <EditText
-            android:id="@+id/whos"
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="30dp"
-            android:hint="ex)개발자,디자이너,기획자" />
+            android:hint="제목" />
 
 
     </LinearLayout>
@@ -118,5 +118,45 @@
             android:layout_below="@+id/linearLayout3"
             android:layout_above="@+id/linearLayout" />
     </LinearLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개발자"
+        android:id="@+id/developCheck"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="디자이너"
+        android:id="@+id/designCheck"
+        android:checked="false"
+        android:layout_alignTop="@+id/developCheck"
+        android:layout_toRightOf="@+id/developCheck"
+        android:layout_toEndOf="@+id/developCheck" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기획자"
+        android:id="@+id/planCheck"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_toRightOf="@+id/designCheck"
+        android:layout_toEndOf="@+id/designCheck"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기타"
+        android:id="@+id/etcCheck"
+        android:layout_alignTop="@+id/planCheck"
+        android:layout_toRightOf="@+id/planCheck"
+        android:layout_toEndOf="@+id/planCheck"
+        android:checked="false" />
 
 </RelativeLayout>
