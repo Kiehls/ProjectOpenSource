@@ -79,6 +79,7 @@ public class MakeActivity extends AppCompatActivity implements View.OnClickListe
 
                 Toast.makeText(getApplicationContext(), "팀 등록이 완료되었습니다.", Toast.LENGTH_SHORT).show();
 
+                opt1 = opt2 = opt3 = opt4 = 0;
                 finish();
                 break;
             case R.id.button_cancel:

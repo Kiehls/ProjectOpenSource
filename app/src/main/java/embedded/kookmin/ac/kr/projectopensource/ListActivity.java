@@ -69,7 +69,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
                 int plan = cursor.getInt(6);
                 int etc = cursor.getInt(7);
                 Log.d("Team List ", "index= " + id + " title= " + title + " numPerson= " + numPerson + " comments= " + comment +
-                "develop = " + develop + "design = " + design + "plan" + plan + "etc = " + etc); //Log
+                " develop = " + develop + " design = " + design + " plan = " + plan + " etc = " + etc); //Log
 
                 tList.add(title);
                 cursor.moveToNext();
@@ -110,6 +110,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
                         + "Comments : \n" + comment
                 );
                 alertDialog.show();
+                develop = design = plan = etc = "";
             }
         });
     }
@@ -138,7 +139,9 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
             cursor.moveToLast();
 
             String title = cursor.getString(1);
-            tList.add(title);
+
+            if(!tList.contains(title))
+                tList.add(title);
 
             cursor.close();
         } catch (Exception e) {
